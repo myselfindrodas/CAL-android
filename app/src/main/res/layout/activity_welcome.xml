@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#196FECCF"
+    tools:context=".ui.activities.Welcome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_75sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/welcomelogo"/>
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/rvInfographic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_320sdp" />
+
+
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:dotsColor="@color/dot_dark_screen1"
+            app:dotsCornerRadius="8dp"
+            app:dotsSize="10dp"
+            android:layout_gravity="center"
+            app:dotsSpacing="4dp"
+            app:dotsWidthFactor="2.5"
+            app:selectedDotColor="@color/dot_light_screen1"
+            app:progressMode="true" />
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/layoutDots"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal"/>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha=".5"
+            android:layout_above="@id/dots_indicator"
+            android:background="@android:color/white" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/primarycolor"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LET'S GET STARTED"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textAlignment="center"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+</layout>

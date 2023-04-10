@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_light"
+        tools:context=".ui.fragment.NewJobFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNewjoblist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+<!--        <include layout="@layout/rv_joblist" />-->
+
+    </RelativeLayout>
+</layout>

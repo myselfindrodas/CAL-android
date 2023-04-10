@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_light">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.activities.LoginphoneActivity">
+
+            <RelativeLayout
+                android:id="@+id/rlLogo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:background="@drawable/rectengel"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/conectar2" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvloginwithphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlLogo"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Login with Phone"
+                android:textAlignment="center"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <LinearLayout
+                android:id="@+id/llMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/tvloginwithphone"
+                android:layout_margin="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+
+                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_shape1"
+                    android:fontFamily="@font/poppinsregular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    app:ccp_countryPreference="IN,US,NZ"
+                    app:ccp_defaultCode="1"
+                    app:ccp_defaultNameCode="US"
+                    app:ccp_textColor="#1C2020"
+                    app:ccp_textSize="@dimen/_10sdp" />
+
+                <!--        <com.rilixtech.widget.countrycodepicker.CountryCodePicker-->
+                <!--            android:id="@+id/etCountrycode"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="match_parent"-->
+                <!--            android:layout_weight="1"-->
+                <!--            android:layout_gravity="center"-->
+                <!--            android:background="@drawable/border_shape1"-->
+                <!--            android:paddingLeft="@dimen/_10sdp"-->
+                <!--            android:hint="+60"-->
+                <!--            android:imeOptions="actionNext"-->
+                <!--            android:inputType="number"-->
+                <!--            android:singleLine="true"-->
+                <!--            android:layout_marginRight="@dimen/_10sdp"-->
+                <!--            android:textAppearance="?android:textAppearanceSmall"-->
+                <!--            android:textColor="@android:color/black"-->
+                <!--            android:textColorHint="#888A8C"-->
+                <!--            android:textSize="@dimen/_12sdp" />-->
+
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/border_shape1"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="Mobile Number"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/llMobileNumber"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/shape1"
+                android:backgroundTint="@color/yellow">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvloginwithphone"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="CONTINUE"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnNext"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="By proceeding. you consent to receive SMS Messages"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <LinearLayout
+                android:id="@+id/llOR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvText"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_weight="0.7"
+                    android:background="#005DAB" />
+
+
+                <TextView
+                    android:id="@+id/tvor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="or"
+                    android:textAlignment="center"
+                    android:textColor="#005DAB"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_weight="0.7"
+                    android:background="#005DAB" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llOR"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/btnLoginemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/llMobileNumber"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape1"
+                    android:backgroundTint="@color/bluecolor">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvloginwithphone"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="LOGIN"
+                        android:textAlignment="center"
+                        android:textColor="@color/yellow"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/btnRegstrationHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/llMobileNumber"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape1"
+                    android:backgroundTint="@color/bluecolor">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvloginwithphone"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="SIGN UP"
+                        android:textAlignment="center"
+                        android:textColor="@color/yellow"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/llbutton"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/rectengel1">
+
+
+                <LinearLayout
+                    android:id="@+id/btnDriverjob"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@drawable/shape1"
+                    android:backgroundTint="@color/yellow"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvloginwithphone"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="Fleet Job Access"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:rotation="180"
+                        android:src="@drawable/arrow_back" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnDriverjob"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Privacy Policy and Terms of Service apply"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</layout>

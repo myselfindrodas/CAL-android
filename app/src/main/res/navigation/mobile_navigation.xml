@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.app.conectar.ui.fragment.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.app.conectar.ui.fragment.ProfileFragment"
+        android:label="Profile Fragment"
+        tools:layout="@layout/fragment_profile" />
+
+
+    <fragment
+        android:id="@+id/nav_joblist"
+        android:name="com.app.conectar.ui.fragment.JoblistFragment"
+        android:label="Joblist Fragment"
+        tools:layout="@layout/fragment_joblist" />
+
+
+    <fragment
+        android:id="@+id/nav_completejoblist"
+        android:name="com.app.conectar.ui.fragment.CompletedjobFragment"
+        android:label="Complete Job List Fragment"
+        tools:layout="@layout/fragment_completedjob" />
+
+
+    <fragment
+        android:id="@+id/nav_trucklist"
+        android:name="com.app.conectar.ui.fragment.ManageTruckFragment"
+        android:label="Truck List Fragment"
+        tools:layout="@layout/fragment_manage_truck" />
+
+
+    <fragment
+        android:id="@+id/nav_alert"
+        android:name="com.app.conectar.ui.fragment.AlertsFragment"
+        android:label="Alert List Fragment"
+        tools:layout="@layout/fragment_alerts" />
+
+
+    <fragment
+        android:id="@+id/nav_alertdetails"
+        android:name="com.app.conectar.ui.fragment.AlertdetailsFragment"
+        android:label="Alert Details Fragment"
+        tools:layout="@layout/fragment_alertdetails" />
+
+
+    <fragment
+        android:id="@+id/nav_truckdetails"
+        android:name="com.app.conectar.ui.fragment.TruckdetailsFragment"
+        android:label="Truck Details Fragment"
+        tools:layout="@layout/fragment_truckdetails" />
+
+
+    <fragment
+        android:id="@+id/nav_contractorhome"
+        android:name="com.app.conectar.ui.fragment.ContractorHomeFragment"
+        android:label="Contractor Home Fragment"
+        tools:layout="@layout/fragment_contractor_home" />
+
+
+    <fragment
+        android:id="@+id/nav_manufacturehome"
+        android:name="com.app.conectar.ui.fragment.ManufactureHomeFragment"
+        android:label="Manufacture Home Fragment"
+        tools:layout="@layout/fragment_manufacture_home" />
+
+
+    <fragment
+        android:id="@+id/nav_fleethome"
+        android:name="com.app.conectar.ui.fragment.FleetHomeFragment"
+        android:label="Fleet Home Fragment"
+        tools:layout="@layout/fragment_fleet_home" />
+
+
+    <fragment
+        android:id="@+id/nav_truckeditdetail"
+        android:name="com.app.conectar.ui.fragment.EditTruckDetailsFragment"
+        android:label="Edit Truck details Fragment"
+        tools:layout="@layout/fragment_edit_truck_details" />
+
+
+    <fragment
+        android:id="@+id/nav_truckimageupload"
+        android:name="com.app.conectar.ui.fragment.TruckImageFragment"
+        android:label="Truck Image Fragment"
+        tools:layout="@layout/fragment_truck_image" />
+
+
+    <fragment
+        android:id="@+id/nav_doccertified"
+        android:name="com.app.conectar.ui.fragment.CertifiedDocFragment"
+        android:label="Certified Doc Fragment"
+        tools:layout="@layout/fragment_certified_doc" />
+
+
+    <fragment
+        android:id="@+id/nav_docuploadimage"
+        android:name="com.app.conectar.ui.fragment.DocuploadFragment"
+        android:label="Doc Upload Fragment"
+        tools:layout="@layout/fragment_docupload" />
+
+
+    <fragment
+        android:id="@+id/nav_driverlist"
+        android:name="com.app.conectar.ui.fragment.ManageDriverFragment"
+        android:label="Driver List Fragment"
+        tools:layout="@layout/fragment_manage_driver" />
+
+
+    <fragment
+        android:id="@+id/nav_driverdetails"
+        android:name="com.app.conectar.ui.fragment.TruckdetailsFragment"
+        android:label="Truck Details Fragment"
+        tools:layout="@layout/fragment_truckdetails" />
+
+
+</navigation>
